@@ -29,6 +29,7 @@ namespace ToDo_Postman
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<TodoContext>(options => options.UseInMemoryDatabase("TodoList"));
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
